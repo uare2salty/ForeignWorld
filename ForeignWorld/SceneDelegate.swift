@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  ForeignWorld
 //
-//  Created by Jonas Sollmann on 16.06.20.
+//  Created by Jonas Sollmann on 15.06.20.
 //  Copyright © 2020 Jonas Sollmann. All rights reserved.
 //
 
@@ -29,7 +29,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: contentView)
+            window.rootViewController = UIHostingController(rootView: contentView.environmentObject(SessionStore()))
             self.window = window
             window.makeKeyAndVisible()
         }

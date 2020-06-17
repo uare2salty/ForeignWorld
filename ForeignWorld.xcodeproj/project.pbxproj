@@ -3,29 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE360B5D2498CBCF00EF922A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360B5C2498CBCF00EF922A /* AppDelegate.swift */; };
-		FE360B5F2498CBCF00EF922A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360B5E2498CBCF00EF922A /* SceneDelegate.swift */; };
+		8E891F3901AE59D75D512E02 /* Pods_ForeignWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1F5C72A8D0E5EBF153CD06 /* Pods_ForeignWorld.framework */; };
 		FE360B622498CBCF00EF922A /* ForeignWorld.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE360B602498CBCF00EF922A /* ForeignWorld.xcdatamodeld */; };
-		FE360B642498CBCF00EF922A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360B632498CBCF00EF922A /* ContentView.swift */; };
 		FE360B662498CBD000EF922A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE360B652498CBD000EF922A /* Assets.xcassets */; };
 		FE360B692498CBD000EF922A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE360B682498CBD000EF922A /* Preview Assets.xcassets */; };
 		FE360B6C2498CBD000EF922A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE360B6A2498CBD000EF922A /* LaunchScreen.storyboard */; };
+		FE360B742498CF4F00EF922A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE360B732498CF4F00EF922A /* GoogleService-Info.plist */; };
+		FE360B7A2498D05C00EF922A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360B752498D05A00EF922A /* AppDelegate.swift */; };
+		FE360B7B2498D05C00EF922A /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360B762498D05B00EF922A /* SessionStore.swift */; };
+		FE360B7C2498D05C00EF922A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360B772498D05B00EF922A /* SceneDelegate.swift */; };
+		FE360B7D2498D05C00EF922A /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360B782498D05B00EF922A /* AuthView.swift */; };
+		FE360B7E2498D05C00EF922A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360B792498D05B00EF922A /* ContentView.swift */; };
+		FE360BA3249944B400EF922A /* ForeignWordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360BA2249944B400EF922A /* ForeignWordsViewModel.swift */; };
+		FE360BA52499523D00EF922A /* ForeignWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360BA42499523D00EF922A /* ForeignWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE1F5C72A8D0E5EBF153CD06 /* Pods_ForeignWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForeignWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C993BA69E30A889A84C3EFB2 /* Pods-ForeignWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeignWorld.release.xcconfig"; path = "Target Support Files/Pods-ForeignWorld/Pods-ForeignWorld.release.xcconfig"; sourceTree = "<group>"; };
+		E7D49AD1886EF6BC1A605A3A /* Pods-ForeignWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeignWorld.debug.xcconfig"; path = "Target Support Files/Pods-ForeignWorld/Pods-ForeignWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		FE360B592498CBCF00EF922A /* ForeignWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForeignWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE360B5C2498CBCF00EF922A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE360B5E2498CBCF00EF922A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FE360B612498CBCF00EF922A /* ForeignWorld.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ForeignWorld.xcdatamodel; sourceTree = "<group>"; };
-		FE360B632498CBCF00EF922A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE360B652498CBD000EF922A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE360B682498CBD000EF922A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE360B6B2498CBD000EF922A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE360B6D2498CBD000EF922A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE360B732498CF4F00EF922A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FE360B752498D05A00EF922A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE360B762498D05B00EF922A /* SessionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		FE360B772498D05B00EF922A /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FE360B782498D05B00EF922A /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		FE360B792498D05B00EF922A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FE360BA2249944B400EF922A /* ForeignWordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeignWordsViewModel.swift; sourceTree = "<group>"; };
+		FE360BA42499523D00EF922A /* ForeignWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeignWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E891F3901AE59D75D512E02 /* Pods_ForeignWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BCAAD548A07EE4076F3A361 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7D49AD1886EF6BC1A605A3A /* Pods-ForeignWorld.debug.xcconfig */,
+				C993BA69E30A889A84C3EFB2 /* Pods-ForeignWorld.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD65BD4F1FC118ABF5F2F8EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE1F5C72A8D0E5EBF153CD06 /* Pods_ForeignWorld.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FE360B502498CBCF00EF922A = {
 			isa = PBXGroup;
 			children = (
 				FE360B5B2498CBCF00EF922A /* ForeignWorld */,
 				FE360B5A2498CBCF00EF922A /* Products */,
+				4BCAAD548A07EE4076F3A361 /* Pods */,
+				AD65BD4F1FC118ABF5F2F8EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +92,18 @@
 		FE360B5B2498CBCF00EF922A /* ForeignWorld */ = {
 			isa = PBXGroup;
 			children = (
-				FE360B5C2498CBCF00EF922A /* AppDelegate.swift */,
-				FE360B5E2498CBCF00EF922A /* SceneDelegate.swift */,
-				FE360B632498CBCF00EF922A /* ContentView.swift */,
+				FE360B752498D05A00EF922A /* AppDelegate.swift */,
+				FE360BA2249944B400EF922A /* ForeignWordsViewModel.swift */,
+				FE360BA42499523D00EF922A /* ForeignWord.swift */,
+				FE360B772498D05B00EF922A /* SceneDelegate.swift */,
+				FE360B792498D05B00EF922A /* ContentView.swift */,
+				FE360B782498D05B00EF922A /* AuthView.swift */,
+				FE360B762498D05B00EF922A /* SessionStore.swift */,
 				FE360B652498CBD000EF922A /* Assets.xcassets */,
 				FE360B6A2498CBD000EF922A /* LaunchScreen.storyboard */,
 				FE360B6D2498CBD000EF922A /* Info.plist */,
 				FE360B602498CBCF00EF922A /* ForeignWorld.xcdatamodeld */,
+				FE360B732498CF4F00EF922A /* GoogleService-Info.plist */,
 				FE360B672498CBD000EF922A /* Preview Content */,
 			);
 			path = ForeignWorld;
@@ -85,9 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE360B702498CBD000EF922A /* Build configuration list for PBXNativeTarget "ForeignWorld" */;
 			buildPhases = (
+				04A805B89EF5483DB09F4EA7 /* [CP] Check Pods Manifest.lock */,
 				FE360B552498CBCF00EF922A /* Sources */,
 				FE360B562498CBCF00EF922A /* Frameworks */,
 				FE360B572498CBCF00EF922A /* Resources */,
+				E22184D0DFB83DA4C5C74CEC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE360B742498CF4F00EF922A /* GoogleService-Info.plist in Resources */,
 				FE360B6C2498CBD000EF922A /* LaunchScreen.storyboard in Resources */,
 				FE360B692498CBD000EF922A /* Preview Assets.xcassets in Resources */,
 				FE360B662498CBD000EF922A /* Assets.xcassets in Resources */,
@@ -144,15 +186,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04A805B89EF5483DB09F4EA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForeignWorld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E22184D0DFB83DA4C5C74CEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForeignWorld/Pods-ForeignWorld-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForeignWorld/Pods-ForeignWorld-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForeignWorld/Pods-ForeignWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FE360B552498CBCF00EF922A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE360B7A2498D05C00EF922A /* AppDelegate.swift in Sources */,
+				FE360B7D2498D05C00EF922A /* AuthView.swift in Sources */,
+				FE360BA52499523D00EF922A /* ForeignWord.swift in Sources */,
+				FE360B7E2498D05C00EF922A /* ContentView.swift in Sources */,
 				FE360B622498CBCF00EF922A /* ForeignWorld.xcdatamodeld in Sources */,
-				FE360B5D2498CBCF00EF922A /* AppDelegate.swift in Sources */,
-				FE360B642498CBCF00EF922A /* ContentView.swift in Sources */,
-				FE360B5F2498CBCF00EF922A /* SceneDelegate.swift in Sources */,
+				FE360B7B2498D05C00EF922A /* SessionStore.swift in Sources */,
+				FE360B7C2498D05C00EF922A /* SceneDelegate.swift in Sources */,
+				FE360BA3249944B400EF922A /* ForeignWordsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +374,7 @@
 		};
 		FE360B712498CBD000EF922A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7D49AD1886EF6BC1A605A3A /* Pods-ForeignWorld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +395,7 @@
 		};
 		FE360B722498CBD000EF922A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C993BA69E30A889A84C3EFB2 /* Pods-ForeignWorld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
