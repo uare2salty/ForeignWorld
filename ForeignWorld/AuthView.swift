@@ -7,6 +7,9 @@
 //
 
 import SwiftUI
+import AuthenticationServices
+import FirebaseAuth
+import CryptoKit
 
 struct signInView: View {
     @State var email: String = ""
@@ -15,6 +18,7 @@ struct signInView: View {
     @EnvironmentObject var session: SessionStore
     
     func signIn() {
+        Auth.auth().currentUser?.reload{(error) in}
         session.signIn(email: email, password: password) { (result, error) in if let error = error {
                 self.error = error.localizedDescription
         } else {
@@ -51,6 +55,15 @@ struct signInView: View {
             .padding()
             .padding(.top, 30)
             
+            NavigationLink(destination: ForgotPassword()) {
+                HStack {
+                    Text ("Forgot Password")
+                        .font(.system(size: 18, weight: .light))
+                        .foregroundColor(Color(.black))
+        
+                }
+            }
+            
             Button(action: signIn) {
                 Text("Sign in")
                     .font(.headline)
@@ -59,7 +72,7 @@ struct signInView: View {
                     .frame(width: 220, height: 60)
                     .background(Color.black)
                     .cornerRadius(35.0)
-                    .padding(.top, 30)
+                    .padding(.top, 20)
             }
             
             if (error != "") {
@@ -95,8 +108,9 @@ struct SignUpView: View {
     @State var error: String = ""
     @EnvironmentObject var session: SessionStore
     
-    func signUp() {
-        session.signUp(email: email, password: password) { (result, error) in if let error = error {
+        func signUp() {
+        session.signUp(email: email, password: password)
+        { (result, error) in if let error = error {
             self.error = error.localizedDescription
         } else {
             self.email = ""
@@ -105,6 +119,8 @@ struct SignUpView: View {
             }
         }
     }
+    
+    
     
     var body: some View{
         VStack {
@@ -168,5 +184,68 @@ struct AuthView: View {
 struct AuthView_Previews: PreviewProvider {
     static var previews: some View {
         AuthView().environmentObject(SessionStore())
+    }
+}
+
+struct ForgotPassword: View {
+    @Environment(\.presentationMode) var presentationMode
+    
+    @State var email: String = ""
+    @State private var showAlert = false
+    @State private var errString: String?
+    
+    func resetPassword(email:String, resetCompletion:@escaping (Result<Bool,Error>) -> Void) {
+        Auth.auth().sendPasswordReset(withEmail: email, completion: { (error) in if let error = error {
+            resetCompletion(.failure(error))
+        } else {
+            resetCompletion(.success(true))
+            }
+        }
+    )}
+    
+    var body: some View{
+        VStack{
+            Text("Type in your Email adress and you will recieve an Email where you can reset your password")
+            .multilineTextAlignment(.center)
+            .font(.system(size: 20, weight: .semibold))
+            .foregroundColor(.black)
+            
+            TextField("Email address", text: $email)
+            .font(.system(size: 18))
+            .padding(20)
+            .background(Color(.systemGray6))
+            .cornerRadius(5.0)
+            
+            Button (action: {
+                self.resetPassword(email: self.email) {(result) in
+                    switch result {
+                    case .failure(let error):
+                        self.errString = error.localizedDescription
+                    case .success( _):
+                        break
+                    }
+                    self.showAlert = true
+                }
+            }) {
+            Text("Reset My Password")
+            .font(.headline)
+            .foregroundColor(.white)
+            .padding()
+            .frame(width: 220, height: 60)
+            .background(Color.black)
+            .cornerRadius(35.0)
+            .padding(.top, 30)
+            
+            
+            
+            }
+        }
+        .padding()
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Password Reset"),
+                  message: Text(self.errString ?? "Success. Reet email sent successfully. Check your email"),
+                  dismissButton: .default(Text("OK")){ self.presentationMode.wrappedValue.dismiss()
+            })
+        }
     }
 }
