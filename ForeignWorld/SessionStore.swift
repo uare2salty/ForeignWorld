@@ -14,7 +14,7 @@ import AuthenticationServices
 import CryptoKit
 
 class SessionStore: ObservableObject {
-    
+
     var didChange = PassthroughSubject<SessionStore, Never>()
     @Published var session: User? {didSet {self.didChange.send(self) }}
     var handle: AuthStateDidChangeListenerHandle?
@@ -29,10 +29,9 @@ class SessionStore: ObservableObject {
             }
         })
     }
-
+    
     func signUp(email: String, password: String, handler: @escaping AuthDataResultCallback) {
         Auth.auth().createUser(withEmail: email, password: password, completion: handler)
-        
     
     }
     

@@ -14,12 +14,12 @@
 		FE360B6C2498CBD000EF922A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE360B6A2498CBD000EF922A /* LaunchScreen.storyboard */; };
 		FE360B742498CF4F00EF922A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE360B732498CF4F00EF922A /* GoogleService-Info.plist */; };
 		FE360B7A2498D05C00EF922A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360B752498D05A00EF922A /* AppDelegate.swift */; };
-		FE360B7B2498D05C00EF922A /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360B762498D05B00EF922A /* SessionStore.swift */; };
 		FE360B7C2498D05C00EF922A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360B772498D05B00EF922A /* SceneDelegate.swift */; };
 		FE360B7D2498D05C00EF922A /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360B782498D05B00EF922A /* AuthView.swift */; };
 		FE360B7E2498D05C00EF922A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360B792498D05B00EF922A /* ContentView.swift */; };
 		FE360BA3249944B400EF922A /* ForeignWordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360BA2249944B400EF922A /* ForeignWordsViewModel.swift */; };
 		FE360BA52499523D00EF922A /* ForeignWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE360BA42499523D00EF922A /* ForeignWord.swift */; };
+		FE478FC1249D205C0036EAB2 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE478FC0249D205C0036EAB2 /* SessionStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,12 +34,12 @@
 		FE360B6D2498CBD000EF922A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE360B732498CF4F00EF922A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FE360B752498D05A00EF922A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE360B762498D05B00EF922A /* SessionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		FE360B772498D05B00EF922A /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FE360B782498D05B00EF922A /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		FE360B792498D05B00EF922A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE360BA2249944B400EF922A /* ForeignWordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeignWordsViewModel.swift; sourceTree = "<group>"; };
 		FE360BA42499523D00EF922A /* ForeignWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeignWord.swift; sourceTree = "<group>"; };
+		FE478FC0249D205C0036EAB2 /* SessionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 				FE360B772498D05B00EF922A /* SceneDelegate.swift */,
 				FE360B792498D05B00EF922A /* ContentView.swift */,
 				FE360B782498D05B00EF922A /* AuthView.swift */,
-				FE360B762498D05B00EF922A /* SessionStore.swift */,
+				FE478FC0249D205C0036EAB2 /* SessionStore.swift */,
 				FE360B652498CBD000EF922A /* Assets.xcassets */,
 				FE360B6A2498CBD000EF922A /* LaunchScreen.storyboard */,
 				FE360B6D2498CBD000EF922A /* Info.plist */,
@@ -238,8 +238,8 @@
 				FE360BA52499523D00EF922A /* ForeignWord.swift in Sources */,
 				FE360B7E2498D05C00EF922A /* ContentView.swift in Sources */,
 				FE360B622498CBCF00EF922A /* ForeignWorld.xcdatamodeld in Sources */,
-				FE360B7B2498D05C00EF922A /* SessionStore.swift in Sources */,
 				FE360B7C2498D05C00EF922A /* SceneDelegate.swift in Sources */,
+				FE478FC1249D205C0036EAB2 /* SessionStore.swift in Sources */,
 				FE360BA3249944B400EF922A /* ForeignWordsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

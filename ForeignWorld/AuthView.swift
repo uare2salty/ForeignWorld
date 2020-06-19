@@ -7,8 +7,10 @@
 //
 
 import SwiftUI
-import AuthenticationServices
+import Firebase
+import Combine
 import FirebaseAuth
+import AuthenticationServices
 import CryptoKit
 
 struct signInView: View {
@@ -18,7 +20,6 @@ struct signInView: View {
     @EnvironmentObject var session: SessionStore
     
     func signIn() {
-        Auth.auth().currentUser?.reload{(error) in}
         session.signIn(email: email, password: password) { (result, error) in if let error = error {
                 self.error = error.localizedDescription
         } else {
@@ -103,10 +104,12 @@ struct signInView: View {
 }
 
 struct SignUpView: View {
+    
     @State var email: String = ""
     @State var password: String = ""
     @State var error: String = ""
     @EnvironmentObject var session: SessionStore
+   
     
         func signUp() {
         session.signUp(email: email, password: password)
@@ -249,3 +252,4 @@ struct ForgotPassword: View {
         }
     }
 }
+
